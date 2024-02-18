@@ -1,0 +1,81 @@
+
+body {
+    background-color: rgba(23, 19, 30, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+    display: flex;
+    height: 100vh;
+    border: 5px solid red;
+    flex-direction: row;
+}
+
+.bodycontainer {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+.sidebar {
+    
+    background-size: contain;
+    height: 100vh;
+    width: auto;
+    display: block;
+    justify-content: left;
+    border: 2px solid green;
+
+}
+
+.intro {
+    color: aliceblue;
+    border: 2px solid pink;
+    margin: 0 auto;
+    font-family: roboto;
+    height: 32%;    
+}
+
+label {
+    color: aliceblue;
+    font-family: roboto-thin;
+
+
+}
+
+
+input{
+
+}
+
+.form {
+    display: flex;
+    border: 2px solid green;
+    height: 36%;
+
+    
+}
+
+.create-account {
+    border: 2px solid purple;
+    height: 32%;
+}
+
+.form-group{
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login {
+    color: aliceblue;
+    font-family: roboto;
+}
+
+.row {
+    display: inline-flex;
+    width: calc(100% /3);
+}
