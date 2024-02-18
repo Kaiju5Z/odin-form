@@ -30,23 +30,41 @@ body {
 }
 
 .intro {
-    color: aliceblue;
+    display: flex;
     border: 2px solid pink;
     margin: 0 auto;
-    font-family: roboto;
-    height: 32%;    
+    height: 32%;
+    width: 100%;
+    align-items: center;
+}
+
+#intro-text {
+    color: rgba(98,127,158,255);
+    font-family: roboto-bold;
+    margin-left: 40px;
+    font-size: larger;
+    
 }
 
 label {
     color: aliceblue;
     font-family: roboto-thin;
 
-
 }
 
 
 input{
+    background-color:#4f5a6a;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06); 
+    border-radius: 10px;
+    height: 20px;
+    outline: none;
+}
 
+input:focus{
+    outline: 2px solid ;
+    outline-color: rgba(98,127,158,255);
 }
 
 .form {
@@ -57,25 +75,44 @@ input{
     
 }
 
-.create-account {
-    border: 2px solid purple;
-    height: 32%;
-}
 
 .form-group{
     flex: 1;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
-}
-
-#login {
-    color: aliceblue;
-    font-family: roboto;
 }
 
 .row {
     display: inline-flex;
     width: calc(100% /3);
+}
+
+.create-account {
+    display: flex;
+    border: 2px solid purple;
+    height: 32%;
+    flex-direction: column;
+}
+
+button {
+    background-color:#4f5a6a;
+    color: aliceblue;
+    font-size: large;
+    font-family: roboto;
+    border: 0;
+    border-radius: 10px;
+    width: 15rem;
+    height: 3rem;
+    margin-top: 20px ;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+#login {
+    color: rgba(98,127,158,255);
+    font-family: roboto;
+    margin-top: 20px;
+    margin-left: 40px;
 }
